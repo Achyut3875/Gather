@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f7f4">
+  <meta name="description" content="Discover creative events at real Bhubaneswar cafes with Gather.">
+  <title>Gather — Find your people, find your moment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Gather home"><span class="brand-mark">g</span> gather<span class="brand-dot">.</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#events">Explore events</a><a href="#about">About us</a><a href="#newsletter">Get inspired</a>
+    </nav>
+    <a class="nav-cta" href="#events">Find your next event <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> GOOD THINGS HAPPEN TOGETHER</div>
+        <h1>Make room<br>for <span>something</span><br><span class="serif-word">wonderful.</span></h1>
+        <p>From coffee and conversations to creative afternoons, find your next lovely experience at a Bhubaneswar cafe.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#events">Explore events <span>↗</span></a><div class="attendees"><div class="avatar-stack"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop&crop=faces" alt=""><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=faces" alt=""><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=80&h=80&fit=crop&crop=faces" alt=""></div><span><strong>2,400+</strong> happy attendees</span></div></div>
+      </div>
+      <div class="hero-visual"><div class="hero-photo"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1100&h=1200&fit=crop" alt="Friends enjoying a live outdoor event"><div class="photo-caption"><span class="live-dot"></span> YOUR NEXT GOOD MEMORY</div></div><div class="floating-note"><span class="note-spark">✳</span><span>Good people.<br><strong>Great energy.</strong></span></div><div class="hero-stamp">MAKE IT<br>MEMORABLE <span>✳</span></div></div>
+      <div class="hero-bottom"><span>SCROLL TO FIND YOUR THING</span><span class="scroll-line"></span><span>01 / 04</span></div>
+    </section>
+
+    <section class="events-section section-wrap" id="events">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> THE GOOD STUFF</div><h2>Find your <span>kind</span><br>of wonderful.</h2></div><p>Little moments, big ideas, new connections.<br>There’s a seat with your name on it.</p></div>
+      <div class="discovery-bar"><div class="search-box"><span aria-hidden="true">⌕</span><input id="event-search" type="search" placeholder="Search events, places, vibes..." aria-label="Search events"></div><div class="category-list" role="group" aria-label="Filter by event category"><button class="filter-chip active" data-category="all">All the good stuff</button><button class="filter-chip" data-category="music">Music</button><button class="filter-chip" data-category="wellness">Wellness</button><button class="filter-chip" data-category="food">Food & drink</button><button class="filter-chip" data-category="creative">Creative</button></div></div>
+      <div class="results-meta"><span id="results-count">A FEW THINGS WE THINK YOU’LL LOVE</span><button class="sort-button" id="sort-button">Soonest first <span>⌄</span></button></div>
+      <div class="event-grid" id="event-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden><span>✳</span><h3>No events found (yet)</h3><p>Try another search or category — your next favorite might be just around the corner.</p><button class="button button-dark" id="clear-filters">Show all events</button></div>
+    </section>
+
+    <section class="quote-section" id="about"><div class="quote-decoration">“</div><div class="quote-content"><div class="eyebrow"><span class="eyebrow-line"></span> A LITTLE REMINDER</div><blockquote>Life’s better when<br>you <span>show up.</span></blockquote><p>We bring people together around the things they love.<br>You bring yourself. That’s the whole plan.</p><a href="#events" class="text-link">Come find your people <span>↗</span></a></div><div class="quote-photo"><img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=1000&h=1000&fit=crop" alt="A joyful gathering of friends"><div class="photo-tag">THE BEST PLANS<br>ARE MADE TOGETHER <span>✳</span></div></div></section>
+
+    <section class="newsletter" id="newsletter"><div><div class="eyebrow"><span class="eyebrow-line"></span> A GOOD THING IN YOUR INBOX</div><h2>Stay in the <span>know.</span></h2><p>Fresh finds, lovely gatherings, and first dibs.<br>Only the good stuff, every other week.</p></div><form id="newsletter-form" class="newsletter-form"><label class="visually-hidden" for="newsletter-email">Email address</label><input type="email" id="newsletter-email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe">↗</button><small id="newsletter-status" aria-live="polite">No spam. Just something to look forward to.</small></form></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">g</span> gather<span class="brand-dot">.</span></a><span>Make a little more room for good things.</span><span>© 2025 Gather Events</span></footer>
+
+  <dialog class="event-dialog" id="event-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close event details">×</button><div id="dialog-content"></div></dialog>
+  <dialog class="register-dialog" id="register-dialog" aria-labelledby="register-title"><button class="dialog-close" aria-label="Close registration">×</button><div class="form-heading"><div class="eyebrow"><span class="eyebrow-line"></span> SAVE YOUR SPOT</div><h2 id="register-title">Count me <span>in.</span></h2><p>We’re glad you’re coming. Just a few details and you’re all set.</p></div><form id="registration-form" novalidate><label for="participant-name">Your name</label><input id="participant-name" name="name" autocomplete="name" placeholder="e.g. Alex Morgan" required minlength="2"><small class="field-error" data-error="name"></small><label for="participant-email">Email address</label><input id="participant-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><small class="field-error" data-error="email"></small><label for="selected-event">Your event</label><select id="selected-event" name="event" required></select><small class="field-error" data-error="event"></small><button class="button button-dark submit-button" type="submit">Reserve my spot <span>↗</span></button><p class="form-note">Only your name and email are saved in this browser. No phone number is requested.</p></form><div class="success-state" id="success-state" hidden><span class="success-icon">✓</span><h3>You’re on the list!</h3><p>Your spot is saved in this browser. We look forward to seeing you there.</p><button class="button button-dark" id="done-button">Lovely, thanks <span>↗</span></button></div></dialog>
+</body>
+</html>
