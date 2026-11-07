@@ -28,7 +28,12 @@ npx serve .
 
 The demo event catalog is defined in `script.js`. It includes Bhubaneswar venues such as Cafe Bengaluru, Yeti, Jugaad Jn, Lola Cafe, Three Chariots Coffee, Bocca Cafe, Kruti Coffee, Cafe 16, and Mamma Mia. Their location details and photos are drawn from public sites and listings. Registration (name, email, selected event), newsletter email entries, and guest reviews are saved to the visitor's browser Local Storage only; this static demo does not send form data to a server. Reviews start empty until a visitor adds one. Images and fonts are loaded from external websites, so those assets need an internet connection.
 
-Deploy the repository as a static site using GitHub Pages, Netlify, or Vercel. This project does not yet have a configured GitHub repository or deployment URL; add those links here after publishing.
+## Project links
+
+- **Live website:** [Gather on GitHub Pages](https://achyut3875.github.io/Gather/)
+- **GitHub repository:** [Achyut3875/Gather](https://github.com/Achyut3875/Gather)
+
+The site is deployed as a static website using GitHub Pages.
 
 ## Built with
 
